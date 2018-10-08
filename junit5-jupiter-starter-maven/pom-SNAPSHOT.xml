@@ -33,6 +33,13 @@
 			<version>${junit.jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- Surefire provider uses this junit-platform-launcher version! -->
+		<!--<dependency>-->
+			<!--<groupId>org.junit.platform</groupId>-->
+			<!--<artifactId>junit-platform-launcher</artifactId>-->
+			<!--<version>${junit.platform.version}</version>-->
+			<!--<scope>runtime</scope>-->
+		<!--</dependency>-->
 	</dependencies>
 
 	<repositories>
@@ -46,6 +53,13 @@
 		</repository>
 	</repositories>
 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>staged-releases</id>
+			<url>https://repository.apache.org/content/repositories/maven-1466/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -58,7 +72,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.1</version>
+				<version>3.0.0-M1</version>
 			</plugin>
 		</plugins>
 	</build>
