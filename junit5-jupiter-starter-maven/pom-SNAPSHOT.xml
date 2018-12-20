@@ -56,7 +56,7 @@
 	<pluginRepositories>
 		<pluginRepository>
 			<id>staged-releases</id>
-			<url>https://repository.apache.org/content/repositories/maven-1472/</url>
+			<url>https://repository.apache.org/content/repositories/maven-1479/</url>
 		</pluginRepository>
 	</pluginRepositories>
 
@@ -72,7 +72,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M2</version>
+				<version>3.0.0-M3</version>
 			</plugin>
 		</plugins>
 	</build>
